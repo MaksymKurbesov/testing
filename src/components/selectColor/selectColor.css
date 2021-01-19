@@ -1,0 +1,52 @@
+.select {
+  display: block;
+  position: relative;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 30px;
+  padding: 3px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.5s all;
+  overflow-y: hidden;
+}
+
+.select--active {
+  height: 135px;
+  border-radius: 25px;
+  padding-top: 10px;
+}
+
+.select::before {
+  content: url('../../assets/drop-arrow.png');
+  position: absolute;
+  right: 20px;
+  transition: 0.5s all;
+}
+
+.select--active::before {
+  transform: rotate(180deg);
+}
+
+.selectColor span:first-child {
+  margin-top: 10px;
+}
+
+.selectColor {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.selectColor span {
+  display: block;
+  background-color: #fff;
+}
+
+.selectColor span:hover {
+  background-color: #D5DAED;
+  border-radius: 0 25px 25px 0;
+}
